@@ -58,7 +58,7 @@
             bindings = <
 &kp TAB   &kp F1    &kp F2        &kp F3     &kp F4        &kp F5       &kp F6    &kp F7           &kp F8       &kp F9         &kp F10  &none
 &kp CLCK  &kp LEFT  &kp UP_ARROW  &kp DOWN   &kp RIGHT     &none        &kp HOME  &kp END          &kp PAGE_UP  &kp PAGE_DOWN  &none    &kp LEFT_SHIFT
-&none     &none     &kp K_PASTE   &kp K_CUT  &kp K_COPY    &kp F11      &kp F12   &kp PRINTSCREEN  &none        &none          &none    &kp DELETE
+&none     &none     &kp K_PASTE   &kp K_CUT  &kp K_COPY    &kp F11      &kp F12   &kp PRINTSCREEN  &kp INSERT   &kp K_MENU     &none    &kp DELETE
                                   &none      &kp LEFT_WIN  &kp LCTRL    &none     &none            &none
             >;
         };

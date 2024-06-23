@@ -56,10 +56,10 @@
 
             label = "Raise";
             bindings = <
-&kp TILDE     &kp F1    &kp F2        &kp F3        &kp F4        &kp F5       &kp F6      &kp F7           &kp F8       &kp F9         &kp F10  &tog 0
-&kp TAB       &kp LEFT  &kp UP_ARROW  &kp DOWN      &kp RIGHT     &kp F11      &kp F12     &kp HOME         &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp RIGHT_CONTROL
-&kp LEFT_ALT  &none     &kp K_PASTE   &kp K_CUT     &kp K_COPY    &kp INS      &kp DELETE  &kp PRINTSCREEN  &none        &kp K_MENU     &none    &kp LEFT_ALT
-                                      &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL    &none       &none            &none
+&kp TILDE     &kp F1    &kp F2        &kp F3     &kp F4        &kp F5             &kp F6      &kp F7      &kp F8       &kp F9         &kp F10  &tog 0
+&kp TAB       &kp LEFT  &kp UP_ARROW  &kp DOWN   &kp RIGHT     &kp F11            &kp F12     &kp HOME    &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp RIGHT_CONTROL
+&kp LEFT_ALT  &none     &none         &none      &none         &kp INS            &kp DELETE  &kp C_MENU  &none        &none          &none    &kp LEFT_ALT
+                                      &kp LCTRL  &kp LEFT_WIN  &kp PRINTSCREEN    &none       &none       &none
             >;
         };
 
@@ -74,10 +74,10 @@
 
         game_layer {
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E   &kp R   &kp T        &kp LEFT  &kp UP_ARROW  &kp DOWN   &kp RIGHT  &none   &tog 0
-&kp F13     &kp A  &kp S  &kp D   &kp F   &kp G        &none     &mkp LCLK     &mkp RCLK  &mkp MCLK  &trans  &trans
-&kp F14     &kp Z  &kp X  &kp C   &kp V   &kp M        &none     &none         &trans     &trans     &trans  &trans
-                          &trans  &trans  &kp SPACE    &mo 2     &trans        &trans
+&kp ESCAPE  &kp Q  &kp W  &kp E           &kp R  &kp T        &none  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN   &kp RIGHT_ARROW  &tog 0
+&kp TAB     &kp A  &kp S  &kp D           &kp F  &kp G        &none  &mkp LCLK       &mkp RCLK     &mkp MCLK  &trans           &trans
+&kp F13     &kp Z  &kp X  &kp C           &kp V  &kp M        &none  &none           &trans        &trans     &trans           &trans
+                          &kp LEFT_SHIFT  &mo 1  &kp SPACE    &mo 2  &trans          &trans
             >;
         };
     };

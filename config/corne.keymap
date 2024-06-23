@@ -24,10 +24,10 @@
 
             label = "Base";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp F      &kp P  &kp B        &kp J    &kp L  &kp U      &kp Y    &kp SQT           &kp BACKSPACE
-&kp TAB     &kp A  &kp R  &kp S      &kp T  &kp G        &kp M    &kp N  &kp E      &kp I    &kp O             &kp COLON
-&kp LSHFT   &kp Z  &kp X  &kp C      &kp D  &kp V        &kp K    &kp H  &kp COMMA  &kp DOT  &kp LEFT_BRACKET  &kp LEFT_ALT
-                          &kp LCTRL  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LCTRL
+&kp ESCAPE      &kp Q  &kp W  &kp F      &kp P  &kp B        &kp J    &kp L  &kp U      &kp Y    &kp SQT           &kp BACKSPACE
+&kp LEFT_SHIFT  &kp A  &kp R  &kp S      &kp T  &kp G        &kp M    &kp N  &kp E      &kp I    &kp O             &kp LEFT_SHIFT
+&kp LEFT_ALT    &kp Z  &kp X  &kp C      &kp D  &kp V        &kp K    &kp H  &kp COMMA  &kp DOT  &kp LEFT_BRACKET  &kp LEFT_ALT
+                              &kp LCTRL  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LCTRL
             >;
         };
 
@@ -40,10 +40,10 @@
 
             label = "Lower";
             bindings = <
-&kp TILDE     &kp EXCL  &kp AT     &kp HASH    &kp DOLLAR     &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTERISK  &kp LPAR   &kp RPAR           &kp BSPC
-&kp EQUAL     &kp N1    &kp N2     &kp N3      &kp N4         &kp N5       &kp N6     &kp N7     &kp N8        &kp N9     &kp N0             &kp QUESTION
-&kp LEFT_ALT  &none     &kp UNDER  &kp PERIOD  &kp SEMICOLON  &kp GRAVE    &kp PLUS   &kp MINUS  &kp ASTERISK  &kp SLASH  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH
-                                   &none       &none          &none        &kp SPACE  &kp ENTER  &mo 3
+&kp TILDE  &kp EXCL        &kp AT     &kp HASH    &kp DOLLAR     &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTERISK  &kp LPAR   &kp RPAR           &kp BSPC
+&kp EQUAL  &kp N1          &kp N2     &kp N3      &kp N4         &kp N5       &kp N6     &kp N7     &kp N8        &kp N9     &kp N0             &kp QUESTION
+&none      &kp UNDERSCORE  &kp COLON  &kp PERIOD  &kp SEMICOLON  &kp GRAVE    &kp PLUS   &kp MINUS  &kp ASTERISK  &kp SLASH  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH
+                                      &none       &none          &none        &kp SPACE  &kp ENTER  &mo 3
             >;
         };
 
@@ -56,10 +56,10 @@
 
             label = "Raise";
             bindings = <
-&kp TAB   &kp F1    &kp F2        &kp F3        &kp F4        &kp F5       &kp F6   &kp F7           &kp F8       &kp F9         &kp F10  &tog 0
-&kp CLCK  &kp LEFT  &kp UP_ARROW  &kp DOWN      &kp RIGHT     &kp F11      &kp F12  &kp HOME         &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp LEFT_SHIFT
-&none     &none     &kp K_PASTE   &kp K_CUT     &kp K_COPY    &none        &none    &kp PRINTSCREEN  &kp INSERT   &kp K_MENU     &none    &kp DELETE
-                                  &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL    &none    &none            &none
+&kp TILDE  &kp F1    &kp F2        &kp F3        &kp F4        &kp F5       &kp F6      &kp F7           &kp F8       &kp F9         &kp F10  &tog 0
+&kp TAB    &kp LEFT  &kp UP_ARROW  &kp DOWN      &kp RIGHT     &kp F11      &kp F12     &kp HOME         &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp LEFT_SHIFT
+&kp CAPS   &none     &kp K_PASTE   &kp K_CUT     &kp K_COPY    &kp INS      &kp DELETE  &kp PRINTSCREEN  &none        &kp K_MENU     &none    &kp LEFT_ALT
+                                   &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL    &none       &none            &none
             >;
         };
 

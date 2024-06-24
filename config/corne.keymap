@@ -40,10 +40,10 @@
 
             label = "Lower";
             bindings = <
-&kp TILDE  &kp EXCL        &kp AT        &kp HASH  &kp DOLLAR  &kp PRCNT    &kp CARET  &kp AMPS    &kp ASTERISK  &kp LPAR   &kp RPAR           &kp BSPC
-&kp EQUAL  &kp N1          &kp N2        &kp N3    &kp N4      &kp N5       &kp N6     &kp N7      &kp N8        &kp N9     &kp N0             &kp QUESTION
-&kp GRAVE  &kp UNDERSCORE  &kp ASTERISK  &kp SEMI  &kp COLON   &kp MINUS    &kp PLUS   &kp PERIOD  &kp SQT       &kp SLASH  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH
-                                         &none     &none       &none        &kp SPACE  &kp ENTER   &mo 3
+&kp TILDE  &kp EXCL        &kp AT        &kp HASH  &kp DOLLAR  &kp PRCNT    &kp CARET       &kp AMPS    &kp ASTERISK  &kp LPAR   &kp RPAR           &tog 1
+&kp EQUAL  &kp N1          &kp N2        &kp N3    &kp N4      &kp N5       &kp N6          &kp N7      &kp N8        &kp N9     &kp N0             &kp QUESTION
+&kp GRAVE  &kp UNDERSCORE  &kp ASTERISK  &kp SEMI  &kp COLON   &kp MINUS    &kp PLUS        &kp PERIOD  &kp SQT       &kp SLASH  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH
+                                         &none     &none       &none        &kp LEFT_SHIFT  &mo 3       &kp LEFT_WIN
             >;
         };
 
@@ -56,29 +56,33 @@
 
             label = "Raise";
             bindings = <
-&kp TILDE     &kp F1    &kp F2        &kp F3     &kp F4        &kp F5             &kp F6      &kp F7      &kp F8       &kp F9         &kp F10  &tog 0
-&kp TAB       &kp LEFT  &kp UP_ARROW  &kp DOWN   &kp RIGHT     &kp F11            &kp F12     &kp HOME    &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp RIGHT_CONTROL
-&kp LEFT_ALT  &none     &none         &none      &none         &kp INS            &kp DELETE  &kp C_MENU  &none        &none          &none    &kp LEFT_ALT
-                                      &kp LCTRL  &kp LEFT_WIN  &kp PRINTSCREEN    &none       &none       &none
+&kp TILDE     &kp F1    &kp F2        &kp F3          &kp F4        &kp F5             &kp F6      &kp F7      &kp F8       &kp F9         &kp F10  &tog 2
+&kp TAB       &kp LEFT  &kp UP_ARROW  &kp DOWN        &kp RIGHT     &kp F11            &kp F12     &kp HOME    &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp RIGHT_CONTROL
+&kp LEFT_ALT  &none     &none         &kp KP_NUMLOCK  &kp CAPS      &kp INS            &kp DELETE  &kp C_MENU  &none        &none          &none    &kp LEFT_ALT
+                                      &kp LCTRL       &kp LEFT_WIN  &kp PRINTSCREEN    &none       &none       &none
             >;
         };
 
         control_layer {
             bindings = <
-&out OUT_TOG       &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0      &kp C_MUTE  &kp C_VOL_UP  &kp C_VOLUME_DOWN  &none           &none  &bootloader
-&kp CAPS           &tog 1        &tog 2        &tog 3        &tog 4        &kp KP_NUMLOCK    &kp C_PLAY  &kp C_PAUSE   &kp C_NEXT         &kp C_PREVIOUS  &none  &sys_reset
-&ext_power EP_TOG  &none         &none         &none         &none         &none             &none       &none         &none              &none           &none  &bt BT_CLR
-                                               &none         &none         &none             &none       &none         &none
+&out OUT_TOG       &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_SEL 4    &kp C_MUTE  &kp C_VOL_UP  &kp C_VOLUME_DOWN  &none           &none  &bootloader
+&ext_power EP_TOG  &tog 1        &tog 2        &none         &tog 4        &none           &kp C_PLAY  &kp C_PAUSE   &kp C_NEXT         &kp C_PREVIOUS  &none  &sys_reset
+&none              &none         &none         &none         &none         &none           &none       &none         &none              &none           &none  &bt BT_CLR
+                                               &none         &none         &none           &none       &none         &none
             >;
+
+            label = "Control";
         };
 
         game_layer {
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E           &kp R  &kp T        &none  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN   &kp RIGHT_ARROW  &tog 0
+&kp ESCAPE  &kp Q  &kp W  &kp E           &kp R  &kp T        &none  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN   &kp RIGHT_ARROW  &tog 4
 &kp TAB     &kp A  &kp S  &kp D           &kp F  &kp G        &none  &mkp LCLK       &mkp RCLK     &mkp MCLK  &trans           &trans
 &kp F13     &kp Z  &kp X  &kp C           &kp V  &kp M        &none  &none           &trans        &trans     &trans           &trans
                           &kp LEFT_SHIFT  &mo 1  &kp SPACE    &mo 2  &trans          &trans
             >;
+
+            label = "Game";
         };
     };
 };

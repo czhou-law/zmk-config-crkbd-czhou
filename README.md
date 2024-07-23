@@ -1,6 +1,24 @@
 # Corne ZMK setup
 This repo is suitable for general corne. 
 
+## References
+
+### Default Layer
+
+![default](__assets/default_layer.png)
+
+### Lower Layer
+
+![lower](__assets/lower_layer.png)
+
+### Raise Layer
+
+![raise](__assets/raise_layer.png)
+
+### Control Layer
+
+![control](__assets/control_layer.png)
+
 ## Repo to go
 1. Corne 42keys with niceview, please fork [42-niceview](https://github.com/superxc3/zmk-config-crkbd/tree/42-niceview).
 2. Corne 42keys with oled, please fork [42-oled](https://github.com/superxc3/zmk-config-crkbd/tree/42-oled).

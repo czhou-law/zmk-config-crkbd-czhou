@@ -41,7 +41,7 @@
             bindings = <
 &kp TILDE  &kp EXCL        &kp AT        &kp HASH  &kp DOLLAR  &kp PRCNT    &kp CARET       &kp AMPS   &kp ASTERISK  &kp LPAR   &kp RPAR           &kp BACKSPACE
 &kp EQUAL  &kp N1          &kp N2        &kp N3    &kp N4      &kp N5       &kp N6          &kp N7     &kp N8        &kp N9     &kp N0             &kp QUESTION
-&kp GRAVE  &kp UNDERSCORE  &kp ASTERISK  &kp SEMI  &kp SQT     &kp DOT      &kp PLUS        &kp MINUS  &kp COLON     &kp SLASH  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH
+&kp GRAVE  &kp UNDERSCORE  &kp ASTERISK  &kp SEMI  &kp SQT     &kp DOT      &kp PLUS        &kp MINUS  &kp COLON     &kp SLASH  &kp RIGHT_BRACKET  &kp LS(BSLH)
                                          &none     &none       &none        &kp LEFT_SHIFT  &mo 3      &kp LEFT_WIN
             >;
         };

@@ -39,10 +39,10 @@
 
             label = "Lower";
             bindings = <
-&kp TILDE  &kp EXCL        &kp AT        &kp HASH  &kp DOLLAR  &kp PRCNT    &kp CARET       &kp AMPS   &kp ASTERISK  &kp LPAR   &kp RPAR           &kp BACKSPACE
-&kp EQUAL  &kp N1          &kp N2        &kp N3    &kp N4      &kp N5       &kp N6          &kp N7     &kp N8        &kp N9     &kp N0             &kp QUESTION
-&kp GRAVE  &kp UNDERSCORE  &kp ASTERISK  &kp SEMI  &kp SQT     &kp DOT      &kp PLUS        &kp MINUS  &kp COLON     &kp SLASH  &kp RIGHT_BRACKET  &kp LS(BSLH)
-                                         &none     &none       &none        &kp LEFT_SHIFT  &mo 3      &kp LEFT_WIN
+&kp TILDE  &kp EXCL        &kp AT        &kp HASH  &kp DOLLAR  &kp PRCNT               &kp CARET       &kp AMPS   &kp ASTERISK  &kp LPAR   &kp RPAR           &kp BACKSPACE
+&kp EQUAL  &kp N1          &kp N2        &kp N3    &kp N4      &kp N5                  &kp N6          &kp N7     &kp N8        &kp N9     &kp N0             &kp QUESTION
+&kp GRAVE  &kp UNDERSCORE  &kp ASTERISK  &kp SEMI  &kp PLUS    &kp NON_US_BACKSLASH    &kp PIPE        &kp MINUS  &kp COLON     &kp SLASH  &kp RIGHT_BRACKET  &kp LS(BSLH)
+                                         &none     &none       &none                   &kp LEFT_SHIFT  &mo 3      &kp LEFT_WIN
             >;
         };
 
@@ -55,17 +55,17 @@
 
             label = "Raise";
             bindings = <
-&kp GRAVE       &kp F1    &kp F2        &kp F3     &kp F4           &kp F5     &kp F6      &kp F7      &kp F8       &kp F9         &kp F10  &kp RIGHT_CONTROL
-&kp LEFT_SHIFT  &kp LEFT  &kp UP_ARROW  &kp DOWN   &kp RIGHT        &kp F11    &kp F12     &kp HOME    &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp LEFT_SHIFT
-&kp LEFT_ALT    &none     &none         &none      &kp PRINTSCREEN  &kp INS    &kp DELETE  &kp C_MENU  &none        &none          &none    &kp LEFT_ALT
-                                        &kp LCTRL  &kp LEFT_WIN     &kp TAB    &none       &none       &none
+&kp LEFT_CONTROL  &kp F1    &kp F2          &kp F3        &kp F4           &kp F5     &kp F6      &kp F7      &kp F8       &kp F9         &kp F10  &kp LEFT_CONTROL
+&kp LEFT_SHIFT    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT        &kp F11    &kp F12     &kp HOME    &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp LEFT_SHIFT
+&kp LEFT_ALT      &none     &none           &none         &kp PRINTSCREEN  &kp INS    &kp DELETE  &kp C_MENU  &none        &kp RCTRL      &none    &kp LEFT_ALT
+                                            &kp LCTRL     &kp LEFT_WIN     &kp TAB    &none       &none       &none
             >;
         };
 
         control_layer {
             bindings = <
 &out OUT_TOG    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_SEL 4    &kp C_MUTE  &kp C_VOL_UP  &kp C_VOLUME_DOWN  &none           &none  &bootloader
-&kp CAPS        &none         &none         &none         &tog 4        &none           &kp C_PLAY  &kp C_PAUSE   &kp C_NEXT         &kp C_PREVIOUS  &none  &sys_reset
+&kp CAPS        &none         &none         &tog 5        &tog 4        &none           &kp C_PLAY  &kp C_PAUSE   &kp C_NEXT         &kp C_PREVIOUS  &none  &sys_reset
 &kp KP_NUMLOCK  &none         &none         &none         &none         &none           &none       &none         &none              &none           &none  &bt BT_CLR
                                             &none         &none         &none           &none       &none         &none
             >;
@@ -86,10 +86,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&tog 5  &kp KP_MULTIPLY  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_PLUS     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_MINUS    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &none           &trans  &trans  &trans  &trans  &trans  &trans
+                                          &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER    &trans  &trans  &trans
             >;
         };
     };

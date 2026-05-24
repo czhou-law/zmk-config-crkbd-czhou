@@ -107,7 +107,7 @@
             bindings = <
 &kp LEFT_CONTROL  &kp F1    &kp F2          &kp F3        &kp F4           &kp F5     &kp F6   &kp F7      &kp F8       &kp F9         &kp F10  &kp LEFT_CONTROL
 &kp LEFT_SHIFT    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT        &kp F11    &kp F12  &kp HOME    &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp LEFT_SHIFT
-&kp LEFT_ALT      &kp L     &kp R           &kp C         &kp PRINTSCREEN  &kp INS    &none    &kp DELETE  &none        &kp LEFT_WIN   &none    &kp LEFT_ALT
+&kp LEFT_ALT      &kp G     &kp R           &kp C         &kp PRINTSCREEN  &kp INS    &none    &kp DELETE  &none        &kp LEFT_WIN   &none    &kp LEFT_ALT
                                             &kp LCTRL     &kp LEFT_ALT     &kp TAB    &none    &none       &none
             >;
         };
